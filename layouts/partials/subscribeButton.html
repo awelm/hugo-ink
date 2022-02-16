@@ -1,0 +1,23 @@
+<div class="center modal-box" id="subscribeModal">
+   <button id="subscribeModalCloseButtonId" class="subscribeModalCloseButton">
+      <i class="subscribeModalCloseButton" data-feather="x"></i>
+   </button>
+   <header>Register For Email Updates</header>
+   <p>
+      Sign up to receive email updates whenever I release a new blog post. I promise to take your privacy seriously.
+   </p>
+   <!-- Copy all changes in this form to subscribeForm.html-->
+   <form action="https://ucla.us14.list-manage.com/subscribe/post?u=cf236e6e258cc2e14b7aaa3e2&amp;id=32a9266784" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div style="display: flex; flex-direction:row; align-items: space-between;">
+         <input class="subscribeModalEmail" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email Address" required>
+         <input class="submitEmailButton" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+      </div>
+   </form>
+</div>
+
+<button class="subscribeButton" onclick="showSubscribeModal(event)">
+   <div style="padding-right: 5px;" onclick="showSubscribeModal(event)">
+      Subscribe
+   </div>
+   <i data-feather="mail" onclick="showSubscribeModal(event)"></i>
+</button>

@@ -25,12 +25,17 @@
 	</div>
 
 	<nav class="nav">
-		<ul class="flat">
-			{{ range .Site.Menus.main }}
+		<ul class="flat" style="display: flex; align-items: center; justify-content: space-between;">
+			<div>
+				{{ range .Site.Menus.main }}
+				<li>
+					<a href="{{ .URL }}">{{ .Name }}</a>
+				</li>
+				{{ end }}
+			</div>
 			<li>
-				<a href="{{ .URL }}">{{ .Name }}</a>
+				{{ partial "subscribeButton.html" . }}
 			</li>
-			{{ end }}
-		</ul>
+		</ul>	
 	</nav>
 </div>
