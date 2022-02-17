@@ -2,6 +2,7 @@
 <html>
 {{ partial "header.html" . }}
 <body>
+	{{ partial "facebookCommentLoader.html" . }}
 	<div class="container wrapper">
 		{{ partial "head.html" . }}
 
@@ -56,5 +57,6 @@
 		</div>
 	</div>
 	{{ partial "footer.html" . }}
+	<div id="subscribeBackdrop" class="subscribeBackdrop"\>
 </body>
 </html>
