@@ -46,3 +46,4 @@
 		{{- range .Site.Params.customJS }}<script src="{{ $.Site.BaseURL }}{{ . }}"></script>{{- end }}
 	{{- end }}
 </head>
+{{- partial "analytics.html" . }}
